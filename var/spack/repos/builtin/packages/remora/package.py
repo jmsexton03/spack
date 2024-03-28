@@ -50,7 +50,7 @@ class Remora(CMakePackage, CudaPackage, ROCmPackage):
 
     homepage = "https://roms-x.readthedocs.io/en/latest/index.html`"
     url = "https://github.com/iulian787/REMORA/archive/refs/tags/r0.9.tar.gz"
-    git = "git@github.com:seahorce-scidac/REMORA.git"
+    git = "https://github.com/seahorce-scidac/REMORA.git"
     version("development", branch="development", submodules=True) 
 
     maintainers("jmsexton03", "hklion", "asalmgren", "iulian787")
