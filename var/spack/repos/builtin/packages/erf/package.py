@@ -43,14 +43,14 @@ class Erf(CMakePackage, CudaPackage, ROCmPackage):
  Arakawa C-grid for large-scale weather modeling."""
 
     homepage = "https://erf.readthedocs.io/en/latest/index.html"
-    url      = "https://github.com/jmsexton03/ERF/releases/download/24.05/ERF-24.05.tar.gz"
+    url      = "https://github.com/erf-model/ERF/archive/refs/tags/24.05.tar.gz"
     git      = "https://github.com/erf-model/ERF.git"
    
     maintainers = ['WeiqunZhang', 'asalmgren', 'jmsexton03', 'AMLattanzi']
 
     version('develop', branch='development', submodules=True)
 #    version('develop', branch='development')
-    version('24.05', sha256='cc15077f5045ad144379417af5861c78b3cccadd953acb0abddd9ea3e3e6b2e7')
+    version('24.05', tag='24.05', commit='1cbcd0003fdda456c4c300f94dc082fc7b615c45', submodules=True)
 
     # Config options
     variant('dimensions', default='3',
