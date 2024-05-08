@@ -50,7 +50,7 @@ class Erf(CMakePackage, CudaPackage, ROCmPackage):
 
     version('develop', branch='development', submodules=True)
 #    version('develop', branch='development')
-#    version('24.03', sha256='351dca62d3dddfff613010f5fcbfc3a915e9146606716b4c8326ebfafdd05f10')
+    version('24.05', sha256='cc15077f5045ad144379417af5861c78b3cccadd953acb0abddd9ea3e3e6b2e7')
 
     # Config options
     variant('dimensions', default='3',
